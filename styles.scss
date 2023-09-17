@@ -1,12 +1,12 @@
 html {
-  font-size: 5.2083333333vw;
+  font-size: calc(10000vw / 1920);
 }
-
 @media (min-aspect-ratio: 1440/1080) {
   html {
-    font-size: 9.2592592593vh;
+    font-size: calc(10000vh / 1080);
   }
 }
+
 :root {
   --main-font: "Work Sans", sans-serif;
   --color-black: #000000;
@@ -42,7 +42,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-
 body::before {
   content: "";
   position: fixed;
@@ -55,7 +54,6 @@ body::before {
   background-repeat: repeat;
   mix-blend-mode: soft-light;
 }
-
 body::after {
   content: "";
   position: fixed;
@@ -68,11 +66,9 @@ body::after {
   transform: translateX(-50%);
   z-index: 0;
 }
-
 body.mobile-menu-open {
   overflow: hidden;
 }
-
 body.modal-active {
   overflow: hidden;
 }
@@ -93,37 +89,31 @@ main {
   height: auto;
   z-index: 100;
 }
-
 .header-wrapp {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.3rem 0.4rem;
 }
-
 .header-left {
   display: flex;
   align-items: center;
   gap: 1.37rem;
 }
-
 .header-main {
   display: flex;
   align-items: center;
   gap: 0.16rem;
 }
-
 .header-logo {
   width: 1.34rem;
   height: max-content;
 }
-
 .header-logo img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .header-title {
   max-width: 0.89rem;
   font-size: 0.12rem;
@@ -132,23 +122,19 @@ main {
   line-height: 1.2;
   margin-top: 0.04rem;
 }
-
 .header-search {
   display: flex;
   align-items: center;
   gap: 0.08rem;
 }
-
 .header-search__btn {
   width: 0.13rem;
 }
-
 .header-search__btn img {
   display: block;
   width: 100%;
   height: auto;
 }
-
 .header-search__input {
   background: transparent;
   border: none;
@@ -157,17 +143,14 @@ main {
   font-weight: 500;
   letter-spacing: -0.0065rem;
 }
-
 .header-search__input::placeholder {
   color: var(--color-fat-tuesday);
 }
-
 .header-right {
   display: flex;
   align-items: center;
   gap: 0.78rem;
 }
-
 .header-contact {
   position: relative;
   font-family: var(--main-font);
@@ -179,7 +162,6 @@ main {
   border: none;
   padding: 0;
 }
-
 .header-contact::before {
   content: "";
   position: absolute;
@@ -189,7 +171,6 @@ main {
   height: 1px;
   background: currentColor;
 }
-
 .header-menu {
   display: flex;
   align-items: center;
@@ -201,7 +182,6 @@ main {
   border-radius: 50%;
   border: 1px solid var(--color-fat-tuesday);
 }
-
 .header-menu img {
   width: 0.1465rem;
 }
@@ -263,7 +243,6 @@ img {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
-
 .lazyLoaded {
   opacity: 1;
 }
@@ -271,7 +250,6 @@ img {
 input::-webkit-input-placeholder, input::placeholder {
   transition: all 0.3s;
 }
-
 input:focus::-webkit-input-placeholder, input:focus::placeholder {
   color: transparent;
 }
@@ -284,6 +262,7 @@ button[type=submit] {
   .s-hidden {
     display: none;
   }
+
   .s-visible {
     display: block;
   }
@@ -292,6 +271,7 @@ button[type=submit] {
   .xs-hidden {
     display: none;
   }
+
   .xs-visible {
     display: block;
   }
@@ -300,9 +280,11 @@ button[type=submit] {
   body.modal-active {
     position: fixed;
   }
+
   .xxs-visible {
     display: block;
   }
+
   .xxs-hidden {
     display: none;
   }
@@ -326,11 +308,9 @@ button[type=submit] {
   overflow: hidden;
   z-index: 1;
 }
-
 .banner-slide {
   z-index: 2;
 }
-
 .banner-title {
   position: absolute;
   top: 1.95rem;
@@ -341,12 +321,10 @@ button[type=submit] {
   text-align: center;
   z-index: 3;
 }
-
 .banner-title span {
   position: relative;
   display: inline-block;
 }
-
 .banner-title span::before {
   content: "";
   position: absolute;
@@ -356,7 +334,6 @@ button[type=submit] {
   border-bottom: 4px solid currentColor;
   transform: rotate(-3deg);
 }
-
 .banner-subtitle {
   position: absolute;
   top: 2.8rem;
@@ -367,7 +344,6 @@ button[type=submit] {
   opacity: 0;
   z-index: 1;
 }
-
 .banner-text {
   position: absolute;
   top: 1.89rem;
@@ -378,7 +354,6 @@ button[type=submit] {
   opacity: 0;
   z-index: 1;
 }
-
 .banner-tree {
   position: absolute;
   bottom: 0;
@@ -389,7 +364,6 @@ button[type=submit] {
   transform-origin: bottom;
   z-index: 2;
 }
-
 .banner-tree img, .banner-tree video {
   display: block;
   width: 100%;
@@ -405,7 +379,6 @@ button[type=submit] {
   max-height: 100vh;
   overflow: hidden;
 }
-
 .wings-svg {
   position: absolute;
   left: 50%;
@@ -415,12 +388,10 @@ button[type=submit] {
   transform: translateX(-50%);
   z-index: 3;
 }
-
 .wings-svg svg {
   width: 100%;
   height: auto;
 }
-
 .wings-hidden {
   position: absolute;
   top: 0;
@@ -440,7 +411,6 @@ button[type=submit] {
   overflow: hidden;
   z-index: 1;
 }
-
 .tree-name {
   position: absolute;
   top: 0.92rem;
@@ -450,7 +420,6 @@ button[type=submit] {
   opacity: 0;
   transform: translateX(-50%);
 }
-
 .tree-wrapp {
   position: absolute;
   top: 3.32rem;
@@ -460,13 +429,11 @@ button[type=submit] {
   transform: translateX(-50%);
   z-index: 1;
 }
-
 .tree-svg {
   display: none;
   width: 100%;
   height: auto;
 }
-
 .tree-circle {
   position: absolute;
   top: 1rem;
@@ -478,11 +445,9 @@ button[type=submit] {
   border-radius: 50%;
   transform: translateX(-50%) scale(0);
 }
-
 .tree-circle__small {
   box-shadow: 0 0 0 3px var(--color-fat-tuesday);
 }
-
 .tree-title {
   position: absolute;
   max-width: 2rem;
@@ -493,47 +458,40 @@ button[type=submit] {
   cursor: pointer;
   z-index: 2;
 }
-
 .tree-title span {
   opacity: 0;
   transform: translateY(100%);
 }
-
 .tree-title_top {
   top: -0.25rem;
   left: 50%;
   transform: translate(-50%, -100%);
   transform-origin: bottom center;
 }
-
 .tree-title_left-top {
   top: 0.57rem;
   right: 6.11rem;
   transform: translate(-100%, -50%);
   transform-origin: bottom right;
 }
-
 .tree-title_left {
   top: 2.13rem;
   left: -0.1rem;
   transform: translate(-100%, 0%);
   transform-origin: bottom right;
 }
-
 .tree-title_right-top {
   top: 0.57rem;
   left: 5.69rem;
   transform: translate(100%, -50%);
   transform-origin: bottom left;
 }
-
 .tree-title_right {
   top: 2.13rem;
   right: -0.1rem;
   transform: translate(100%, 0%);
   transform-origin: bottom left;
 }
-
 .tree-title__decor {
   position: absolute;
   top: 50%;
@@ -542,15 +500,12 @@ button[type=submit] {
   transform: translateY(-50%);
   opacity: 0;
 }
-
 .tree-title__decor.left {
   left: 0.06rem;
 }
-
 .tree-title__decor.right {
   right: 0.06rem;
 }
-
 .tree-ball {
   position: absolute;
   width: 0.14rem;
@@ -560,37 +515,31 @@ button[type=submit] {
   opacity: 0;
   z-index: 2;
 }
-
 .tree-ball_top {
   top: 0;
   left: 50%;
   transform: translate(-50%, -100%);
 }
-
 .tree-ball_left-top {
   top: 0.6rem;
   right: 7.39rem;
   transform: translate(0%, -50%);
 }
-
 .tree-ball_left {
   top: 2.5rem;
   left: 0;
   transform: translate(-50%, -100%);
 }
-
 .tree-ball_right-top {
   top: 0.6rem;
   left: 7.39rem;
   transform: translate(0%, -50%);
 }
-
 .tree-ball_right {
   top: 2.5rem;
   right: 0;
   transform: translate(50%, -100%);
 }
-
 .tree-ball span {
   position: absolute;
   top: 0;
@@ -602,11 +551,9 @@ button[type=submit] {
   border-radius: 50%;
   pointer-events: none;
 }
-
 .tree-ball span:not(:first-child) {
   opacity: 0;
 }
-
 .tree-wings {
   position: absolute;
   bottom: -1.22rem;
@@ -618,16 +565,13 @@ button[type=submit] {
   opacity: 0;
   z-index: 1;
 }
-
 .tree-wings__item {
   position: absolute;
 }
-
 .tree-wings__item img {
   width: 100%;
   height: auto;
 }
-
 .tree-wings__center {
   position: absolute;
   top: 1.28rem;
@@ -635,7 +579,6 @@ button[type=submit] {
   width: 1.34rem;
   transform: translateX(-50%);
 }
-
 .tree-wings__top-left {
   position: absolute;
   top: 0;
@@ -643,7 +586,6 @@ button[type=submit] {
   width: 7.05rem;
   transform-origin: center right;
 }
-
 .tree-wings__top-right {
   position: absolute;
   top: 0;
@@ -651,7 +593,6 @@ button[type=submit] {
   width: 7.05rem;
   transform-origin: center left;
 }
-
 .tree-wings__bottom-left {
   position: absolute;
   top: 2.586rem;
@@ -659,7 +600,6 @@ button[type=submit] {
   width: 3.9rem;
   transform-origin: top right;
 }
-
 .tree-wings__bottom-right {
   position: absolute;
   top: 2.586rem;
@@ -685,16 +625,12 @@ button[type=submit] {
   overflow: hidden;
   z-index: 100;
 }
-
 .sound-item {
   width: 0.03rem;
   height: 0.1rem;
   border-radius: 0.03rem;
   background: var(--color-fat-tuesday);
 }
-
 .sound-item:nth-child(odd) {
   height: 0.15rem;
 }
-
-/*# sourceMappingURL=styles.css.map */
