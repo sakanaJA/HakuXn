@@ -621,19 +621,19 @@ gsap.registerPlugin(
           },
           "<"
         )
-        .to(
-          ".banner-title",
-          {
-            opacity: 1,
-            scale: 1,
-            stagger: {
-              each: 0.1,
-              from: "start"
-            },
-            duration: 1
-          },
-          "<"
-        )
+        // .to(
+        //   ".banner-title",
+        //   {
+        //     opacity: 1,
+        //     scale: 1,
+        //     stagger: {
+        //       each: 0.1,
+        //       from: "start"
+        //     },
+        //     duration: 1
+        //   },
+        //   "<"
+        // )
         .set(
           ".banner-tree",
           {

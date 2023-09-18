@@ -333,9 +333,9 @@ button[type=submit] {
 
 .banner-title {
   position: absolute;
-  top: 1.95rem;
+  top: 1.45rem;
   max-width: 9.57rem;
-  font-size: 1rem;
+  font-size: 0.6rem;
   line-height: 1.1;
   letter-spacing: -0.07rem;
   text-align: center;
@@ -353,14 +353,12 @@ button[type=submit] {
   bottom: -0.04rem;
   left: 0;
   width: 100%;
-  border-bottom: 4px solid currentColor;
-  transform: rotate(-3deg);
 }
 
 .banner-subtitle {
   position: absolute;
   top: 2.8rem;
-  font-size: 1rem;
+  font-size: 0.5rem;
   line-height: 1.1;
   letter-spacing: -0.07rem;
   text-align: center;
@@ -508,7 +506,7 @@ button[type=submit] {
 
 .tree-title_left-top {
   top: 0.57rem;
-  right: 6.11rem;
+  right: 6.41rem;
   transform: translate(-100%, -50%);
   transform-origin: bottom right;
 }
@@ -522,7 +520,7 @@ button[type=submit] {
 
 .tree-title_right-top {
   top: 0.57rem;
-  left: 5.69rem;
+  left: 6.50rem;
   transform: translate(100%, -50%);
   transform-origin: bottom left;
 }
@@ -695,6 +693,9 @@ button[type=submit] {
 
 .sound-item:nth-child(odd) {
   height: 0.15rem;
+}
+.small-text {
+  font-size: 0.6em;  /* この値はお好みに合わせて調整してください */
 }
 
 /*# sourceMappingURL=styles.css.map */
