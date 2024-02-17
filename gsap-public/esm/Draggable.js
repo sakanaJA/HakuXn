@@ -89,6 +89,7 @@ _copy = function _copy(obj, factor) {
     copy[p] = factor ? obj[p] * factor : obj[p];
   }
 
+
   return copy;
 },
     _extend = function _extend(obj, defaults) {
